@@ -14,10 +14,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var counterView: UILabel!
     private static var counterValue: Int = 0
     
-    func getCurrentDate() -> String {
+    private func getCurrentDate() -> String {
         let getDate = Date()
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd.MM.yyyy, HH:mm:ss"
+        
         return dateFormatter.string(from: getDate)
     }
     
