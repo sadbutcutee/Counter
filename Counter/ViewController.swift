@@ -2,8 +2,6 @@
 //  ViewController.swift
 //  Counter
 //
-//  Created by Александр Гладков on 14.10.2025.
-//
 
 import UIKit
 
