@@ -71,9 +71,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="counterCEButton" destination="9kf-Dx-DsK" id="k2b-9f-SCE"/>
-                        <outlet property="counterMinusButton" destination="fZ2-KA-D7a" id="wCb-0d-Cit"/>
-                        <outlet property="counterPlusButton" destination="9kf-Dx-DsK" id="Vg7-X2-Vo8"/>
                         <outlet property="counterView" destination="UZe-aw-LpL" id="d1a-qB-Yyi"/>
                         <outlet property="historyView" destination="pBh-jF-1ZI" id="kK7-JU-cqJ"/>
                     </connections>

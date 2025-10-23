@@ -5,13 +5,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
 
-    @IBOutlet weak var counterPlusButton: UIButton!
-    @IBOutlet weak var counterCEButton: UIButton!
-    @IBOutlet weak var counterMinusButton: UIButton!
     @IBOutlet weak var historyView: UITextView!
     @IBOutlet weak var counterView: UILabel!
+    
     private static var counterValue: Int = 0
     
     private func getCurrentDate() -> String {
@@ -35,18 +33,18 @@ class ViewController: UIViewController {
         historyView.text = "История изменений: \n"
     }
     
-    @IBAction func counterPlusDidTap(_ sender: Any) {
+    @IBAction private func counterPlusDidTap(_ sender: Any) {
         ViewController.counterValue += 1
         setCounterText()
         setHistoryText("\(getCurrentDate()): значение изменено на +1")
     }
     
-    @IBAction func counterCEDidTap(_ sender: Any) {
+    @IBAction private func counterCEDidTap(_ sender: Any) {
         ViewController.counterValue = 0
         setCounterText()
         setHistoryText("\(getCurrentDate()): значение сброшено")
     }
-    @IBAction func counterMinusDidTap(_ sender: Any) {
+    @IBAction private func counterMinusDidTap(_ sender: Any) {
         if ViewController.counterValue == 0 {
             ViewController.counterValue = 0
             setHistoryText("\(getCurrentDate()): попытка уменьшить значение счётчика ниже 0")
